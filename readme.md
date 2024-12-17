@@ -35,54 +35,56 @@ Your mission is to navigate through the dungeon, defeat creatures, collect key i
 ---
 
 ## Project Structure
-DungeonAdventure
-main.c           # Entry point of the game
-game.c/.h        # Core game logic (commands, combat, save/load)
-player.c/.h      # Player attributes and inventory management
-oom.c/.h         # Room connections, items, and creatures
-creature.c/.h    # Creature structure and combat stats
-cJSON/           # cJSON library for JSON parsing
-CMakeLists.txt   # Build configuration file for CMake
-README.md        # Project documentation
+- DungeonAdventure
+- main.c           # Entry point of the game
+- game.c/.h        # Core game logic (commands, combat, save/load)
+- player.c/.h      # Player attributes and inventory management
+- room.c/.h         # Room connections, items, and creatures
+- creature.c/.h    # Creature structure and combat stats
+- cJSON/           # cJSON library for JSON parsing
+- CMakeLists.txt   # Build configuration file for CMake
+- README.md        # Project documentation
 
-Dependencies
-•	cJSON: A lightweight JSON parsing library used for save/load functionality.
-o	Install cJSON on Linux:
-sudo apt-get install libcjson-dev
-
-
+### Dependencies
+- cJSON: A lightweight JSON parsing library used for save/load functionality.
+- Install cJSON on Linux:
+- sudo apt-get install libcjson-dev
 
 
 
 
 
-Build and Run Instructions
+
+
+## Build and Run Instructions
 Prerequisites
-•	GCC Compiler
-•	cJSON library (for JSON-based save/load functionality)
-•	CMake (optional, for automated build, minimum version 3.10)
-Compilation Instructions
-Run the following commands in the terminal:
-mkdir build
-cd build
-cmake ..
-make
+- GCC Compiler
+- cJSON library (for JSON-based save/load functionality)
+- CMake (optional, for automated build, minimum version 3.10)
 
-To run the game:
-./DungeonAdventure
+---
 
+- Compilation Instructions
+- Run the following commands in the terminal:
+- mkdir build
+- cd build
+- cmake ..
+- make
 
-Manuel Compile
-1.Compile All Source Files Together:
-Use the following gcc command to compile all .c files into a single executable:
-gcc -o DungeonAdventure main.c game.c player.c room.c creature.c ./cJSON/cJSON.c
-2.Run the game:
-./DungeonAdventure
+- To run the game:
+- ./DungeonAdventure
 
 
+## Manuel Compile
+- 1.Compile All Source Files Together:
+- Use the following gcc command to compile all .c files into a single executable:
+- gcc -o DungeonAdventure main.c game.c player.c room.c creature.c ./cJSON/cJSON.c
+- 2.Run the game:
+- ./DungeonAdventure
 
-Best Regards;
-Bülent Durusoy
+
+
+- Best Regards; Bülent Durusoy
 
 
 
